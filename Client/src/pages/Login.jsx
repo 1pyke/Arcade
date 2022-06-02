@@ -75,6 +75,7 @@ const Login = () => {
 
   const handelClick = (e) => {
     e.preventDefault();
+    console.log(username, password);
     login(dispatch, { username, password });
   };
   return (
@@ -84,12 +85,12 @@ const Login = () => {
         <Form>
           <Input
             placeholder="username"
-            onClick={(e) => setUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
           <Input
             placeholder="password"
             type="password"
-            onClick={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <Button onClick={handelClick} disabled={isFetching}>
             LOGIN
