@@ -15,6 +15,7 @@ Password:samer
 
 Username:lieth
 Password:123456
+---------------
 
 
 Note! there's no frontend registration only  
